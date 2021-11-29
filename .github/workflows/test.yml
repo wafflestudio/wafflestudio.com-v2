@@ -1,0 +1,23 @@
+name: CI
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install
+      - name: Install eslint
+        run: npm install -g eslint@7.32.0
+      - name: Run ESLint
+        run: eslint .
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install gatsby
+        run: npm i -g gatsby-cli
+      - name: Install modules
+        run: npm install
+      - name: Build
+        run: npm run build
