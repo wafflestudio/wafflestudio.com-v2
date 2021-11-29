@@ -2,7 +2,7 @@
 
 ### 설치
 
-- `yarn prepare`
+- `npm run prepare-husky`
   - `husky` 세팅
 
 ### 개발 컨벤션
