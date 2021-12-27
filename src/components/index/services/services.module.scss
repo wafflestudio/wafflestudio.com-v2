@@ -1,0 +1,53 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 235, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navigator {
+  margin: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.navigateItem {
+  list-style-type: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: rgb(228, 218, 206);
+  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+
+  &.selected {
+    background-color: rgb(176, 159, 159);
+  }
+}
+
+.preview {
+  height: calc(70% - 20px);
+  background-color: rgb(176, 159, 159);
+  border-radius: 8px;
+
+  &.web {
+    width: 600px;
+  }
+
+  &.app {
+    width: 250px;
+  }
+}
