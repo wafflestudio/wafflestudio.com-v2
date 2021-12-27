@@ -34,8 +34,30 @@ const servicesItems: { [key in Service]: NavItem } = {
 const Services = (): JSX.Element => {
   const [selectedService, setSelectedService] = useState<Service>(Service.SNUTT);
 
+  const renderGlows = (): JSX.Element[] => {
+    const { innerWidth = 0, innerHeight = 0 } = typeof window !== 'undefined' ? window : {}; // 가드 안해주면 빌드타임에는 window 객체가 없어서 오류 발생
+
+    return new Array(5).fill(null).map((_, i) => {
+      const size = (() => {
+        const rand = Math.random();
+        if (rand < 0.3) return styles.big;
+        else if (rand < 0.7) return styles.medium;
+        else return styles.tiny;
+      })();
+
+      return (
+        <span
+          key={i}
+          className={classNames(styles.glow, size)}
+          style={{ left: Math.random() * innerWidth, top: Math.random() * innerHeight }}
+        />
+      );
+    });
+  };
+
   return (
     <section className={styles.wrapper}>
+      {renderGlows()}
       <div className={styles.inner}>
         <article
           className={classNames(styles.preview, servicesItems[selectedService].type === DeviceType.WEB ? styles.web : styles.app)}
