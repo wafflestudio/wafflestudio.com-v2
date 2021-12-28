@@ -1,0 +1,98 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgb(244, 237, 225);
+
+  .memberNav {
+    display: grid;
+    transform: rotate(45deg);
+    grid-gap: 30px;
+    width: 570px;
+    height: 570px;
+    padding: 60px;
+    margin: 0 auto;
+
+    .memberItem {
+      list-style-type: none;
+      width: 90px;
+      height: 90px;
+      margin: 0;
+      background-color: rgb(223, 207, 179);
+      position: relative;
+
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          grid-column-start: #{$i};
+          grid-column-end: #{$i + 1};
+          grid-row-start: #{5 - $i};
+          grid-row-end: #{6 - $i};
+        }
+      }
+
+      &:first-child:before, &:last-child:before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+      }
+
+      &:first-child:before {
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        left: -63px;
+        bottom: -63.5px;
+      }
+
+      &:last-child:before {
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        right: -63.5px;
+        top: -63.5px;
+      }
+
+      .memberBorder {
+        width: calc(100% + 33px);
+        height: calc(100% + 33px);
+        margin: -16.5px;
+        border: 3px solid white;
+        z-index: 2;
+        position: relative;
+      }
+
+      .memberLabel {
+        position: absolute;
+        top: -38px;
+        left: -16px;
+        height: 20px;
+        font-size: 18px;
+        line-height: 20px;
+        width: 95px;
+        text-align: center;
+      }
+
+      .memberGapBox {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(223, 207, 179);
+        position: absolute;
+        bottom: -30px;
+        left: -30px;
+
+        &.lastBox {
+          top: -30px;
+          right: -30px;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  .description {
+    width: 660px;
+    margin: -140px auto;
+    background-color: #fff;
+    height: 200px;
+  }
+}
