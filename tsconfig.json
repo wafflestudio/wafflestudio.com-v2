@@ -14,5 +14,7 @@
     }
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".cache"],
+  "esModuleInterop": true,
+  "files": ["./src/types/scss.d.ts"]
 }
