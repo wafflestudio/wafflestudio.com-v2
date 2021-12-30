@@ -1,0 +1,78 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 235, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .glow {
+    background-color: #fff;
+    box-shadow: 0 0 10px 3px #fff, 0 0 14px 6px #fff, 0 0 18px 9px #fff;
+    border-radius: 50%;
+    position: absolute;
+
+    &.tiny {
+      width: 1px;
+      height: 1px;
+    }
+
+    &.medium {
+      width: 10px;
+      height: 10px;
+    }
+
+    &.big {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .inner {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .preview {
+      height: calc(70% - 20px);
+      background-color: rgb(176, 159, 159);
+      border-radius: 8px;
+      z-index: 2;
+
+      &.web {
+        width: 600px;
+      }
+
+      &.app {
+        width: 250px;
+      }
+    }
+
+    .navigator {
+      margin: 0;
+      display: flex;
+      gap: 32px;
+      z-index: 2;
+
+      .navigateItem {
+        list-style-type: none;
+        transition: all 0.2s;
+        cursor: pointer;
+        background-color: rgb(228, 218, 206);
+        border-radius: 16px;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+
+        &.selected {
+          background-color: rgb(176, 159, 159);
+        }
+      }
+    }
+  }
+}

@@ -46,7 +46,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-resolve-src',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassRuleTest: /layout\.scss$/,
+        sassRuleModulesTest: /\.module\.scss$/,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
