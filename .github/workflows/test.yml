@@ -1,6 +1,6 @@
 name: CI
 on:
-  pull_reqeusts:
+  pull_reqeust:
     branches: [master]
 jobs:
   lint:
