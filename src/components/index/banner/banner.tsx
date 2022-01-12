@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import * as styles from 'components/index/intro/intro.module.scss';
+import * as styles from 'components/index/banner/banner.module.scss';
 import Navigation from 'components/common/navigation/navigation';
 
 const Intro = (): JSX.Element => {
