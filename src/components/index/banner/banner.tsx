@@ -1,8 +1,8 @@
 import React from 'react';
+
 import classNames from 'classnames';
 
 import Navigation from 'components/common/navigation/navigation';
-
 import * as styles from 'components/index/banner/banner.module.scss';
 
 const Intro = (): JSX.Element => {
