@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import * as styles from 'components/common/banner/banner.module.scss';
 import Navigation from 'components/common/navigation/navigation';
 
-const Intro = (): JSX.Element => {
+const Banner = (): JSX.Element => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.main_box}>
@@ -32,4 +32,4 @@ const Intro = (): JSX.Element => {
   );
 };
 
-export default Intro;
+export default Banner;
