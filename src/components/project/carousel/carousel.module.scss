@@ -7,6 +7,7 @@
     width: 100%;
     height: 45vh;
     margin: 0;
+    object-fit: contain;
   }
 
   .imageSelector {
@@ -20,6 +21,7 @@
       width: 11vw;
       height: 11vh;
       margin: 0;
+      object-fit: cover;
     }
 
     .arrow {
