@@ -5,9 +5,13 @@ import classNames from 'classnames';
 import * as styles from 'components/common/banner/banner.module.scss';
 import Navigation from 'components/common/navigation/navigation';
 
-const Banner = (): JSX.Element => {
+interface Props {
+  className?: string;
+}
+
+const Banner = ({ className }: Props): JSX.Element => {
   return (
-    <section className={styles.wrapper}>
+    <section className={classNames(styles.wrapper, className)}>
       <div className={styles.main_box}>
         <div className={styles.inner}>
           <ol className={styles.menu_list}>
