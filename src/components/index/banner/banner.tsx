@@ -24,7 +24,7 @@ const Intro = (): JSX.Element => {
               <a>출시</a>
             </li>
           </ol>
-          <div className={styles.box}></div>
+          <div className={styles.box} />
         </div>
       </div>
       <Navigation />
