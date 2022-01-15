@@ -9,7 +9,7 @@ import * as styles from 'components/project/snuboard/snuboard.module.scss';
 
 const Snuboard = (): JSX.Element => {
   return (
-    <ProjectWrapper className={styles.wrapper}>
+    <ProjectWrapper className={styles.wrapper} id={'snuboard'}>
       <div className={styles.bgItem} />
       <div className={styles.bgItem} />
       <div className={styles.bgItem} />

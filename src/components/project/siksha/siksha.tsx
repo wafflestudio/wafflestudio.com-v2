@@ -9,7 +9,7 @@ import * as styles from 'components/project/siksha/siksha.module.scss';
 
 const Siksha = (): JSX.Element => {
   return (
-    <ProjectWrapper className={styles.wrapper}>
+    <ProjectWrapper className={styles.wrapper} id={'siksha'}>
       <StaticImage className={styles.spoon} src={'../../../images/spoon.png'} alt={'spoon'} width={200} />
       <StaticImage className={styles.chopsticks} src={'../../../images/chopsticks.png'} alt={'chopsticks'} width={200} />
       <Overview

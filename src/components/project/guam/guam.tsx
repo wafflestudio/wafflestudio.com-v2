@@ -9,7 +9,7 @@ import ProjectWrapper from 'components/project/project-wrapper/project-wrapper';
 
 const Guam = (): JSX.Element => {
   return (
-    <ProjectWrapper className={styles.wrapper}>
+    <ProjectWrapper className={styles.wrapper} id={'guam'}>
       <div className={styles.bgItem} />
       <div className={styles.bgItem} />
       <div className={styles.bgItem} />

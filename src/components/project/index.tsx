@@ -6,6 +6,7 @@ import Seo from 'components/common/seo';
 import Gatgu from 'components/project/gatgu/gatgu';
 import Guam from 'components/project/guam/guam';
 import * as styles from 'components/project/index.module.scss';
+import Navigator from 'components/project/navigator/navigator';
 import Siksha from 'components/project/siksha/siksha';
 import Snuboard from 'components/project/snuboard/snuboard';
 import Snutt from 'components/project/snutt/snutt';
@@ -16,6 +17,7 @@ const Project = (): JSX.Element => {
       <Seo title="Project" />
       <main className={styles.wrapper}>
         <Banner className={styles.banner} />
+        <Navigator />
         <Snutt />
         <Siksha />
         <Snuboard />

@@ -6,10 +6,15 @@ import * as styles from 'components/project/project-wrapper/project-wrapper.modu
 
 interface Props {
   className?: string;
+  id: string;
 }
 
-const ProjectWrapper: React.FC<Props> = ({ children, className }) => {
-  return <section className={classNames(styles.wrapper, className)}>{children}</section>;
+const ProjectWrapper: React.FC<Props> = ({ children, id, className }) => {
+  return (
+    <section id={id} className={classNames(styles.wrapper, className)}>
+      {children}
+    </section>
+  );
 };
 
 export default ProjectWrapper;

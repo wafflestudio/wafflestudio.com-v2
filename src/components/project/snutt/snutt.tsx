@@ -9,7 +9,7 @@ import * as styles from 'components/project/snutt/snutt.module.scss';
 
 const Snutt = (): JSX.Element => {
   return (
-    <ProjectWrapper className={styles.wrapper}>
+    <ProjectWrapper className={styles.wrapper} id={'snutt'}>
       <div className={styles.timeItem}>&nbsp;</div>
       <div className={styles.timeItem}>&nbsp;</div>
       <div className={styles.timeItem}>&nbsp;</div>

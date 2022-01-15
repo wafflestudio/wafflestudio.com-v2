@@ -9,7 +9,7 @@ import ProjectWrapper from 'components/project/project-wrapper/project-wrapper';
 
 const Gatgu = (): JSX.Element => {
   return (
-    <ProjectWrapper className={styles.wrapper}>
+    <ProjectWrapper className={styles.wrapper} id={'gatgu'}>
       <Overview
         logo={<StaticImage src={'../../../images/gatgu.png'} alt={'gatgu logo'} width={145} height={145} />}
         name={'같이구매'}
