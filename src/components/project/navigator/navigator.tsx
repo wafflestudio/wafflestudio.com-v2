@@ -1,29 +1,28 @@
 import React from 'react';
 
+import classNames from 'classnames';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import * as styles from 'components/project/navigator/navigator.module.scss';
 
-const Navigator = (): JSX.Element => {
+interface Props {
+  current: number;
+
+  items: {
+    label: string;
+    anchor: string;
+  }[];
+}
+
+const Navigator = ({ current, items }: Props): JSX.Element => {
   return (
-    <nav className={styles.wrapper}>
-      <ol>
-        <li>
-          <AnchorLink to={'#snutt'} title={'snutt'} />
-        </li>
-        <li>
-          <AnchorLink to={'#siksha'} title={'siksha'} />
-        </li>
-        <li>
-          <AnchorLink to={'#snuboard'} title={'snuboard'} />
-        </li>
-        <li>
-          <AnchorLink to={'#guam'} title={'guam'} />
-        </li>
-        <li>
-          <AnchorLink to={'#gatgu'} title={'gatgu'} />
-        </li>
-      </ol>
+    <nav className={classNames(styles.wrapper, current < 0 && styles.hide)}>
+      {items.map((item, i) => (
+        <AnchorLink key={item.anchor} className={styles.linkItem} to={`#${item.anchor}`}>
+          <span className={styles.linkText}>{item.label}</span>
+          <span className={classNames(styles.bullet, current === i && styles.selected)}>&nbsp;</span>
+        </AnchorLink>
+      ))}
     </nav>
   );
 };
