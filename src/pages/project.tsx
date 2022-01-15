@@ -1,13 +1,16 @@
-import * as React from 'react';
+import React from 'react';
 
 import Layout from 'components/common/layout';
 import Seo from 'components/common/seo';
+import Project from 'components/project';
 
-const ProjectPage = (): JSX.Element => (
-  <Layout>
-    <Seo title="Project" />
-    <h1>프로젝트 페이지</h1>
-  </Layout>
-);
+const ProjectPage = (): JSX.Element => {
+  return (
+    <Layout>
+      <Seo title="Project" />
+      <Project />
+    </Layout>
+  );
+};
 
 export default ProjectPage;

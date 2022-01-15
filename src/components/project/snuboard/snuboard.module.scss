@@ -1,0 +1,46 @@
+.wrapper {
+  background-color: #42B8DF;
+  color: #ffffff;
+
+  .bgItem {
+    width: 33%;
+    height: 14%;
+    position: absolute;
+
+    background: linear-gradient(270.19deg, #3988D1 0.17%, rgba(57, 136, 209, 0) 101.6%);
+    border-radius: 0 75px 75px 0;
+
+    &:nth-of-type(1) {
+      top: 2.8%;
+      left: 1.7%;
+    }
+    &:nth-of-type(2) {
+      top: 2.8%;
+      left: 30%;
+    }
+    &:nth-of-type(3) {
+      top: 19%;
+      left: -10%;
+    }
+    &:nth-of-type(4) {
+      top: 19%;
+      left: 48%;
+    }
+    &:nth-of-type(5) {
+      top: 35%;
+      left: -1%;
+    }
+    &:nth-of-type(6) {
+      top: 51%;
+      left: -20%;
+    }
+    &:nth-of-type(7) {
+      top: 67%;
+      left: 66%;
+    }
+    &:nth-of-type(8) {
+      top: 83%;
+      left: 51%;
+    }
+  }
+}

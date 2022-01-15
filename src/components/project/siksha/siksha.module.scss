@@ -1,0 +1,16 @@
+.wrapper {
+  background: linear-gradient(103.95deg, #fd7878 8%, #ff9a44 96.37%);
+  color: #fff;
+
+  .spoon {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: 7%;
+  }
+
+  .chopsticks {
+    position: absolute;
+    top: calc(50% - 330px);
+    right: 7%;
+  }
+}

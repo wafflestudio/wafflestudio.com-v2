@@ -2,12 +2,16 @@ import React from 'react';
 
 import classNames from 'classnames';
 
+import * as styles from 'components/common/banner/banner.module.scss';
 import Navigation from 'components/common/navigation/navigation';
-import * as styles from 'components/index/banner/banner.module.scss';
 
-const Intro = (): JSX.Element => {
+interface Props {
+  className?: string;
+}
+
+const Banner = ({ className }: Props): JSX.Element => {
   return (
-    <section className={styles.wrapper}>
+    <section className={classNames(styles.wrapper, className)}>
       <div className={styles.main_box}>
         <div className={styles.inner}>
           <ol className={styles.menu_list}>
@@ -32,4 +36,4 @@ const Intro = (): JSX.Element => {
   );
 };
 
-export default Intro;
+export default Banner;

@@ -243,6 +243,14 @@ textarea {
 }
 * {
   box-sizing: inherit;
+
+  // 스크롤바 제거
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
 }
 *:before {
   box-sizing: inherit;

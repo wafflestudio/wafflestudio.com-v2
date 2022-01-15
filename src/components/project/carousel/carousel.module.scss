@@ -1,0 +1,36 @@
+.wrapper {
+  width: 45vw;
+  height: 57vh;
+  z-index: 99;
+
+  .mainImage {
+    width: 100%;
+    height: 45vh;
+    margin: 0;
+    object-fit: contain;
+  }
+
+  .imageSelector {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    .imageItem {
+      width: 11vw;
+      height: 11vh;
+      margin: 0;
+      object-fit: cover;
+    }
+
+    .arrow {
+      margin: 0 10px;
+      cursor: pointer;
+
+      &:last-child {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

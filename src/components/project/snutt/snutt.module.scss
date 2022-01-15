@@ -1,0 +1,59 @@
+.wrapper {
+  color: #6e6363;
+
+  .timeItem {
+    width: 9%;
+    min-width: 100px;
+    background-color: #4e642d;
+    position: absolute;
+
+    &:nth-of-type(1) {
+      height: 338px;
+      background-color: #e54459;
+      left: 20px;
+      top: 20px;
+    }
+
+    &:nth-of-type(2) {
+      height: 579px;
+      background-color: #1bd0c8;
+      left: 20px;
+      top: 378px;
+    }
+
+    &:nth-of-type(3) {
+      height: 460px;
+      background-color: #a6d930;
+      left: calc(max(9%, 100px) + 40px);
+      top: 196px;
+    }
+
+    &:nth-of-type(4) {
+      height: 404px;
+      background-color: #f58d3d;
+      left: calc(max(9%, 100px) + 40px);
+      top: 676px;
+    }
+
+    &:nth-of-type(5) {
+      height: 60%;
+      background-color: #fac42d;
+      right: calc(max(9%, 100px) + 40px);
+      bottom: 20%;
+    }
+
+    &:nth-of-type(6) {
+      height: 60%;
+      background-color: #2bc267;
+      right: 20px;
+      top: 0;
+    }
+
+    &:nth-of-type(7) {
+      height: 37.4%;
+      background-color: #af56b3;
+      right: 20px;
+      bottom: 0;
+    }
+  }
+}

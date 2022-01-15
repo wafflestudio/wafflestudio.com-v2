@@ -1,8 +1,8 @@
 import * as React from 'react';
 
+import Banner from 'components/common/banner/banner';
 import Layout from 'components/common/layout';
 import Seo from 'components/common/seo';
-import Banner from 'components/index/banner/banner';
 
 const IndexPage = (): JSX.Element => (
   <Layout>
